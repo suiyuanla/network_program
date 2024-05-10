@@ -55,3 +55,5 @@ void Channel::handleEvent() {
 }
 
 void Channel::update() { loop_->updateChannel(this); }
+
+void Channel::remove() { loop_->removeChannel(this); }

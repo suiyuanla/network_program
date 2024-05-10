@@ -41,6 +41,9 @@ class Channel {
     void disableWriting();
     void disableAll();
 
+    // 将channel从epoller中移除
+    void remove();
+
     // 是否正在监听事件
     bool isWriting() const;
     bool isReading() const;
